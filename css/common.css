@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: Light;
+    font-weight: 300;
+    src: url(../font/notosans/NotoSansKR-Light.woff2) format('woff2'),
+         url(../font/notosans/NotoSansKR-Light.woff) format('woff'),
+         url(../font/notosans/NotoSansKR-Light.otf) format('opentype');
+  }
+ @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: Regular;
+    font-weight: 400;
+    src: url(../font/notosans/NotoSansKR-Regular.woff2) format('woff2'),
+         url(../font/notosans/NotoSansKR-Regular.woff) format('woff'),
+         url(../font/notosans/NotoSansKR-Regular.otf) format('opentype');
+  }
+ @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: Medium;
+    font-weight: 500;
+    src: url(../font/notosans/NotoSansKR-Medium.woff2) format('woff2'),
+         url(../font/notosans/NotoSansKR-Medium.woff) format('woff'),
+         url(../font/notosans/NotoSansKR-Medium.otf) format('opentype');
+  }
+ @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: Bold;
+    font-weight: 700;
+    src: url(../font/notosans/NotoSansKR-Bold.woff2) format('woff2'),
+         url(../font/notosans/NotoSansKR-Bold.woff) format('woff'),
+         url(../font/notosans/NotoSansKR-Bold.otf) format('opentype');
+  }
+html,body{width:100%;height:100%}
+body{word-wrap:break-word;word-break:keep-all}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+button{border:0 none;background-color:rgba(0,0,0,0);cursor:pointer;background:none;cursor:pointer;font-family:"Noto Sans KR", sans-serif;background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+button:active{padding: 0;}
+table{border-collapse:separate;border-spacing:0}
+table caption,legend{display:none}
+html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{vertical-align:baseline;padding:0;margin:0;border:0}
+*{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+dl,ul,ol,menu,li{list-style:none}
+body,input,textarea,select,button,table,th,td{font-family:'Noto Sans KR', sans-serif;font-size:15px;line-height:1.3;letter-spacing:0;font-weight: 400;color:#333}
+a{color:#333;text-decoration:none}
+a:link,a:active,a:visited{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-weight:400;line-height: 0;}
+h1:after,h2:after,h3:after,h4:after,h5:after,h6:after{content: "";display: inline-block;height: 1.2em;vertical-align: middle;}/*크로스브라우징문제로 추가*/
+fieldset,img{border:none;vertical-align:top;}
+figure{margin:0}
+.hide{width:0;height:0;left:0;top:0;font-size:0;line-height:0;overflow:hidden;position:absolute}	
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+.clear{clear:both}
+.clear:after{display: block;content: "";clear: both}
+.block{display: block;}
+.fl{float:left}
+.fr{float:right}
+.blank{display:none !important} 
+.pointer{cursor:pointer !important} 
+.a_left{text-align:left !important} 
+.a_right{text-align:right !important}
+.a_center{text-align:center !important}
+.no_scroll{position:absolute;overflow:hidden}
+.ellipsis{position: relative;line-height: 1.3;white-space:nowrap; word-wrap:normal;word-break: break-all;overflow: hidden;text-overflow: ellipsis;display: inline-block;max-width:90%;}
+.ellipsis2{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.4em; height: 2.9em;}
+
+
+.wrap{margin:0 auto;width: 1400px;}

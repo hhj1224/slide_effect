@@ -1,0 +1,59 @@
+@import url(common.css);
+
+body{overflow-x:hidden;background:#000}
+
+.slide_effect05{width:100%;height:100vh;background:#fff;position: relative;text-align: right;background-position: center;}
+
+.slide_effect05 .text_area{overflow: hidden;position: absolute;left: 8%;bottom: 27%;width:510px;z-index: 13;opacity: 0;}
+.slide_effect05 .text_area p{text-align: left;color:#fff;font-size: 40px;font-weight: 600;}
+.slide_wrap{position: relative;top: 45%;width: 55%;display: inline-block;height: 450px;overflow: hidden;}
+.card_slide{padding-bottom:10px;z-index: 10;overflow: hidden;opacity: 0.99;}/*ie overflow:hidden 안될때 opacity:0.99주면 해결됨..*/
+.card_slide .swiper-slide{border-radius: 15px;width: 300px;height: 350px;text-align: center;box-shadow:5px 5px 10px rgba(0,0,0,.5);overflow: hidden;}
+.card_slide .swiper-slide p{overflow: hidden;padding:0 20px;padding-top: 282px;text-align: left;opacity: 0;color:#fff;font-size: 18px;}
+
+.show .text_area{opacity: 1;transition: 500ms;}
+.show .card_slide .swiper-slide p{opacity: 1;transition: 500ms;}
+
+
+/*background대신 이미지로*/
+.card_slide .swiper-slide img{height: 100%;position: relative;z-index: 1;left: -61%;}
+.card_slide .swiper-slide p{position: absolute;bottom:20px;left:0;z-index: 2;}
+
+.square{position: absolute;border-radius: 15px;position: absolute;top: 45%;z-index: 11;opacity: 0;width:280px;height:350px;left:864px;background-position: center;}
+.square.on{animation: scale_up 0.6s ease-in-out forwards;opacity: 1;}
+.square.back{animation: scale_down 0.8s ease-in-out forwards;}
+
+@keyframes scale_up {
+    100% {width:100%;height:100%;top:0;left:0;}
+}
+@keyframes scale_down {
+    0% {width:100%;height:100%;top:0;left:0;opacity: 1;}
+    100% {width:280px;height:350px;left:864px;opacity: 1;}
+}
+
+.slide_effect05 .slide_arrow{font-size:0;line-height:0;width:60px;height:60px;border:1px solid rgba(255,255,255,.5);background:none;border-radius: 50%;position: absolute;bottom: 0;left: 0;z-index: 13;}
+.slide_effect05 .slide_arrow:before{content:'';width: 1px;height: 10px;background:#fff;position: absolute;left: 50%;top: 33%;transform: rotate(45deg);}
+.slide_effect05 .slide_arrow:after{content:'';width: 1px;height: 10px;background:#fff;position: absolute;left: 50%;top: 45%;transform: rotate(135deg);}
+.slide_effect05 .slide_arrow.slide_next{left: 80px;}
+.slide_effect05 .slide_arrow.slide_next:before{transform: rotate(315deg);}
+.slide_effect05 .slide_arrow.slide_next:after{transform: rotate(220deg);}
+
+.swiper-slide-prev.delay{opacity: 0;transition: 0s;}
+
+.slide_wrap .swiper-pagination{bottom: 8px;text-align: right;right: 155px;left: auto;z-index: -1;color:rgba(255,255,255,.5);font-size:35px;z-index: 12;}
+.slide_wrap .swiper-pagination .swiper-pagination-current{color:#fff}
+
+.swiper-slide{transform: translateX(0px);transition: .4s;}
+.delay{transform: translateX(30px);transition: .4s;}
+.delay.d0{transform: translateX(0);}
+.d1{transition-delay: 100ms;}
+.d2{transition-delay: 200ms;}
+.d3{transition-delay: 300ms;}
+
+.nav_bar{position: absolute;left: 182px;bottom: 28px;height: 2px;width: 600px;background: rgba(255,255,255,.5);z-index: 13;}
+.nav_bar span{position: absolute;left:0;top:0;background:#fff;display: block;width: 0;height: 100%;}
+.nav_bar.go span{animation: bar 5s ease-in-out forwards;}
+
+@keyframes bar {
+    100% {width:100%;}
+}
